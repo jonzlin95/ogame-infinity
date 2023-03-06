@@ -505,8 +505,8 @@ function injectScript(path, cb, module = false) {
 }
 
 window.addEventListener("DOMContentLoaded", (event) => {
-  injectScript("ogkush.js", null, true);
   injectScript("libs/purify.min.js", null, false);
+  injectScript("ogkush.js", null, true);
 });
 document.addEventListener("ogi-chart", function (e) {
   injectScript("libs/chart.min.js", () => {
